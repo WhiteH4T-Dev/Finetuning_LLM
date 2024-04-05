@@ -1,3 +1,4 @@
+## Dont be a skid, actually read the code lmfao
 #### References
 - https://ai.google.dev/
 - https://www.together.ai/

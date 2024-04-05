@@ -1,4 +1,4 @@
-## Dont be a skid, actually read the code lmfao
+## Getting Started
 #### Install the required packages
 ```
 pip install -r requirements.txt

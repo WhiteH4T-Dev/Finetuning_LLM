@@ -1,4 +1,9 @@
 ## Dont be a skid, actually read the code lmfao
+#### Install the required packages
+```
+pip install -r requirements.txt
+```
+
 #### References
 - https://ai.google.dev/
 - https://www.together.ai/

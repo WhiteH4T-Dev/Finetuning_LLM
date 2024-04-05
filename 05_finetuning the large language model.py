@@ -6,10 +6,7 @@ import together
 
 # Define clear function based on operating system
 def clear_screen():
-    if os.name == 'posix':  # For Unix and Linux
-        subprocess.run('clear')
-    else:  # For Windows
-        subprocess.run('cls', shell=True)
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 # ANSI escape codes for colors
 RED = '\033[91m'
@@ -187,6 +184,12 @@ models = {
     "147": "Salesforce/codegen2-16B",
     "148": "Salesforce/codegen2-7B",
 }
+
+# References
+print("""
+=====================================================
+https://docs.together.ai/docs/inference-models
+=====================================================""")
 
 # Display the menu
 for key in models:

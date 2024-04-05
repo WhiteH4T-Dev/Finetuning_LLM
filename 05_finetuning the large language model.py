@@ -1,11 +1,12 @@
 import together
 import os
 from dotenv import load_dotenv
+import glob
 
 # Load .env file variables
 load_dotenv()
 
-# Get the API key from .env file
+# Get the API keys from .env file
 together_api_key = os.getenv('TOGETHER_API_KEY')
 wandb_api_key = os.getenv('WANDB_API_KEY')
 
@@ -16,8 +17,18 @@ if not together_api_key or not wandb_api_key:
 
 together.api_key = together_api_key
 
+# Retrieve the file ID from the temp folder
+temp_folder = './temp'
+file_list = glob.glob(os.path.join(temp_folder, '*.txt'))
+if not file_list:
+    print("No training file ID found in the temp folder.")
+    exit()
+with open(file_list[0], 'r') as file_id_file:
+    training_file_id = file_id_file.read().strip()
+
+# Start the fine-tuning process with the retrieved file ID
 resp = together.Finetune.create(
-    training_file='file-4d319f52-c3e2-46f2-aa1c-a1b5cf5f3881',
+    training_file=training_file_id,
     model='teknium/OpenHermes-2p5-Mistral-7B',
     n_epochs=3,
     n_checkpoints=1,

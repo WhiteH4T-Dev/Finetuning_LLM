@@ -7,6 +7,7 @@
 - https://api.together.xyz/jobs
 - https://github.com/abetlen/llama-cpp-python
 - https://llama-cpp-python.readthedocs.io/en/latest/
+- https://python.langchain.com/docs/get_started/introduction/
 
 <br>
 

@@ -1,0 +1,8 @@
+together==0.2.11
+wandb==0.16.6
+llama_cpp_python==0.2.57
+langchain==0.1.13
+langchain-community==0.0.29
+langchain-core==0.1.37
+langchain-text-splitters==0.0.1
+langsmith==0.1.38

@@ -1,1 +1,1 @@
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Wqf2GimAlWo?si=IGy3HYAqJL7JaitI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+![image](https://github.com/WhiteH4T-Dev/llm_finetuning/assets/83751620/bb9c2644-559c-42dc-9541-8c93a2725bd6)

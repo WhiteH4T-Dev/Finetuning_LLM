@@ -6,15 +6,6 @@ pip install -r requirements.txt
 
 <br>
 
-#### Setup your environment file
-```
-GEMENI_API_KEY="AIzaSyDZdqzzrFSyRI5xuty3Lk********"
-TOGETHER_API_KEY="66bca1156aa416c1b09051784e3a958********"
-WANDB_API_KEY="f0e245a03f64669cbf2a33264c8562********"
-```
-
-<br>
-
 #### References
 - https://ai.google.dev/
 - https://www.together.ai/

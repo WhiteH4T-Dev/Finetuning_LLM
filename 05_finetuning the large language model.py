@@ -234,5 +234,17 @@ try:
 
     fine_tune_id = resp['id']
     print(GREEN + f"Fine-tuning started successfully. Fine-tune ID: {fine_tune_id}" + ENDC)
+    # Check if the temp folder exists, create if not
+    if not os.path.exists(temp_folder):
+        os.makedirs(temp_folder)
+
+    # Define the path for the new file using the fine_tune_id
+    fine_tune_file_path = os.path.join(temp_folder, f"{fine_tune_id}.txt")
+
+    # Write the fine_tune_id to the file
+    with open(fine_tune_file_path, 'w') as file:
+        file.write(fine_tune_id)
+
+    print(GREEN + f"Fine-tune ID saved successfully to {fine_tune_file_path}" + ENDC)
 except Exception as e:
     print(RED + f"An error occurred during fine-tuning: {e}" + ENDC)

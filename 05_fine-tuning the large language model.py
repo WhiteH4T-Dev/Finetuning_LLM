@@ -183,6 +183,7 @@ models = {
     "146": "replit/replit-code-v1-3b",
     "147": "Salesforce/codegen2-16B",
     "148": "Salesforce/codegen2-7B",
+    "149": "meta-llama/Llama-3-8b-chat-hf"
 }
 
 # References
